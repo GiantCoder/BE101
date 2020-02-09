@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
 
-    working_directory: ~/repo
+    working_directory: ~/my-rest-api
 
     environment:
       # Customize the JVM maximum heap limit
@@ -22,21 +22,19 @@ jobs:
       TERM: dumb
 
     steps:
-      - checkout
+      - checkout # check out source code to working directory
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "build.gradle" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+      - restore_cache: # restore the saved cache after the first run or if `pom.xml` has changed
+          # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+          key: circleci-be101-{{ checksum "pom.xml" }}
 
-      - run: gradle dependencies
+      - run: mvn dependency:go-offline # gets the project dependencies
 
-      - save_cache:
+      - save_cache: # saves the project dependencies
           paths:
-            - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}
+            - ~/.m2
+          key: circleci-be101-{{ checksum "pom.xml" }}
 
-      # run tests!
-      - run: gradle test
+      - run: mvn package # Maven packages the code as a JAR file
+      - run: docker image build -t be101:latest # Docker builds the image
+
