@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcdb696d-a657-4b53-9905-8e34e5d9621f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/.circleci/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/src/main/java/com/codersuk/be101restapi/be101restapi/Be101ApiApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/src/main/java/com/codersuk/be101restapi/be101restapi/controllers/MyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/src/main/java/com/codersuk/be101restapi/be101restapi/models/APIStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/src/main/java/com/codersuk/be101restapi/be101restapi/models/HelloWorldResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-rest-api/src/test/java/com/codersuk/be101restapi/be101restapi/Be101ApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/my-rest-api/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="226">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -97,7 +81,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581256156770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581256343926" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -163,12 +147,12 @@
       <workItem from="1580043489497" duration="379000" />
       <workItem from="1580043884930" duration="9000" />
       <workItem from="1581252087845" duration="2521000" />
-      <workItem from="1581255867114" duration="288000" />
+      <workItem from="1581255867114" duration="387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3653000" />
+    <option name="totallyTimeSpent" value="3752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="6" />
@@ -231,8 +215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="226">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
         </state>
       </provider>
     </entry>
