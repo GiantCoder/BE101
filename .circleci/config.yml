@@ -8,7 +8,7 @@ workflows:
           account-url: "953709933230.dkr.ecr.us-west-2.amazonaws.com"
           repo: "BE101"
           region: "us-west-2"
-          tag: "${CIRCLE_SHA1}"
+          tag: "latest"
 
 #version: 2.1
 #jobs: # a collection of steps
