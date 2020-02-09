@@ -8,6 +8,7 @@ jobs: # a collection of steps
       - image: circleci/openjdk:8-jdk-stretch # ...with this image as the primary container; this is where all `steps` will run
 
     steps: # a collection of executable commands
+#      - setup_remote_docker
 
       - checkout # check out source code to working directory
 
@@ -25,7 +26,8 @@ jobs: # a collection of steps
       - run: mvn package # run the actual tests
       - run:
           name: Install Docker client
-          command: apk add docker-cli
+          command: apt-get install docker-cli
+
       - run: docker image build -t be101:latest . # Docker builds the image
 
 #      - store_test_results: # uploads the test metadata from the `target/surefire-reports` directory so that it can show up in the CircleCI dashboard.
