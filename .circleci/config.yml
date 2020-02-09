@@ -27,7 +27,7 @@ jobs: # a collection of steps
       - run: docker image build -t 953709933230.dkr.ecr.us-west-2.amazonaws.com/codersuk-restapi . # Docker builds the image
       - run:
           name: Install PIP
-          command: sudo apt-get install python-pip python
+          command: sudo apt-get install python3-pip python
       - run:
           name: Install awscli
           command: sudo pip install awscli
