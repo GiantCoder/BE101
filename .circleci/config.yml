@@ -23,6 +23,9 @@ jobs: # a collection of steps
           key: circleci-be101-{{ checksum "pom.xml" }}
 
       - run: mvn package # run the actual tests
+      - run:
+          name: Install Docker client
+          command: apk add docker-cli
       - run: docker image build -t be101:latest . # Docker builds the image
 
 #      - store_test_results: # uploads the test metadata from the `target/surefire-reports` directory so that it can show up in the CircleCI dashboard.
